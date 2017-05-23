@@ -43,7 +43,7 @@ class NumberService {
     @Cacheable(value = "mycache")
     public Integer getCurrentNumber(String key) {
         number++;
-        System.out.println("Will return " + number);
+        System.out.println("Will return and cache " + number);
         return number;
     }
 }

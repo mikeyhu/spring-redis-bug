@@ -1,10 +1,14 @@
 apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = "buggycache.Main"
 
 repositories {
     jcenter()
 }
 
 dependencies {
-    compile 'org.springframework.data:spring-data-redis:1.8.3.RELEASE'
+    // compile 'org.springframework.data:spring-data-redis:1.7.10.RELEASE' // Works
+    compile 'org.springframework.data:spring-data-redis:1.8.3.RELEASE' // Fails
     compile 'redis.clients:jedis:2.9.0'
 }
